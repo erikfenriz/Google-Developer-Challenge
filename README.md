@@ -1,7 +1,7 @@
 # Google-Developer-Challenge
-On the way to greatness; year 2017; Udacity and Google announcing over 100k scholarships around the world
+On the way to greatness; year 2017; Udacity and Google announcing over 100k scholarships around the world.
 <br>
-Here is the code, starting with something not super trivial:
+I have accomplished the program and here to share the code is the code, starting with something not super trivial:
 # Quiz: Even or Odd (3-2)
 Directions:
 Write an if...else statement that:
