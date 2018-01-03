@@ -529,3 +529,142 @@ sec--;
 console.log(message);
 }
 ```
+# Quiz: Find my Seat (4-8)
+Directions:
+![3213163359-a4952f4f18-o](https://user-images.githubusercontent.com/25347909/34532822-4fa27530-f0c0-11e7-8b97-6e1b1c770f8b.jpg)
+Theater seats often display a row and seat number to help theatergoers find their seats. If there are 26 rows (0 to 25) and 100 seats (0 to 99) in each row, write a nested for loop to print out all of the different seat combinations in the theater.
+
+Example output for row-seat information: output each row and seat number on a separate line
+
+0-0
+0-1
+0-2
+...
+25-97
+25-98
+25-99
+Your Code:
+```
+/*
+ * Programming Quiz: Find my Seat (4-8)
+ * 
+ * Write a nested for loop to print out all of the different seat combinations in the theater.
+ * The first row-seat combination should be 0-0 
+ * The last row-seat combination will be 25-99
+ * 
+ * Things to note: 
+ *  - the row and seat numbers start at 0, not 1
+ *  - the highest seat number is 99, not 100
+ */
+for(var x = 0;x < 26; x++){
+      for(var y = 0; y < 100; y++){
+       console.log(x+"-"+y);
+    }
+}
+```
+
+# Quiz: Build a Triangle (5-3)
+
+Directions:
+For this quiz, you're going to create a function called buildTriangle() that will accept an input (the triangle at its widest width) and will return the string representation of a triangle. See the example output below.
+
+buildTriangle(10);
+Returns:
+
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+* * * * * * 
+* * * * * * * 
+* * * * * * * * 
+* * * * * * * * * 
+* * * * * * * * * *
+We've given you one function makeLine() to start with. The function takes in a line length, and builds a line of asterisks and returns the line with a newline character.
+```
+function makeLine(length) {
+  var line = "";
+  for (var j = 1; j <= length; j++) {
+    line += "* "
+  }
+  return line + "\n";
+}
+```
+You will need to call this makeLine() function in buildTriangle().
+
+This will be the most complicated program you've written yet, so take some time thinking through the problem before diving into the code. What tools will you need from your JavaScript tool belt? Professionals plan out their code before writing anything. Think through the steps your code will need to take and write them down in order. Then go through your list and convert each step into actual code. Good luck!
+
+Your Code:
+```
+
+// creates a line of * for a given length
+function makeLine(length) {
+    var line = "";
+    for (var j = 1; j <= length; j++) {
+        line += "* ";
+    }
+    return line + "\n";
+}
+
+// your code goes here.  Make sure you call makeLine() in your own code.
+function buildTriangle(n){
+    var triangle = "";
+    for (var i = 1; i <= n; i++) {
+        triangle += makeLine(i);
+    }
+    return triangle
+}
+
+// test your code by uncommenting the following line
+console.log(buildTriangle(100));
+```
+# Quiz: Inline (5-6)
+Directions:
+Call the emotions() function so that it prints the output you see below, but instead of passing the laugh() function as an argument, pass an inline function expression instead.
+
+emotions("happy", laugh(2)); // you can use your laugh function from the previous quizzes
+Prints: "I am happy, haha!"
+
+Your Code:
+```
+/*
+ * Programming Quiz: Inline Functions (5-6)
+ */
+
+// don't change this code
+function emotions(myString, myFunc) {
+    console.log("I am " + myString + ", " + myFunc(2));
+}
+emotions("happy", function laugh(lols){
+    var laughs = "";
+    for(var x = 1; x<=lols; x++){
+        laughs += "ha";
+    }
+    return laughs + "!";
+});
+```
+# Quiz: Colors of the Rainbow (6-4)
+Directions:
+James was creating an array with the colors of the rainbow, and he forgot some colors. The standard rainbow colors are usually listed in this order:
+
+var rainbow = ["Red", "Orange", "Yellow", "Green", "Blue", "Purple"];
+but James had this:
+
+var rainbow = ["Red", "Orange", "Blackberry", "Blue"];
+Using only the splice() method, insert the missing colors into the array, and remove the color "Blackberry" by following these steps:
+
+Remove "Blackberry"
+Add "Yellow" and "Green"
+Add "Purple"
+
+Your Code:
+```
+/*
+ * Programming Quiz: Colors of the Rainbow (6-4)
+ */
+
+var rainbow = ["Red", "Orange", "Blackberry", "Blue"];
+rainbow.splice(-2,2,"Yellow","Green","Blue","Purple");
+console.log(rainbow);
+```
