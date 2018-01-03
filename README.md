@@ -22,6 +22,8 @@ Make sure to test your code with different values. For example:
 If number equals 1, then odd should be printed to the console.
 If number equals 12, then even should be printed to the console.
 
+Your code
+```
 /*
  * Programming Quiz: Even or Odd (3-2)
  *
@@ -30,7 +32,7 @@ If number equals 12, then even should be printed to the console.
  *
  * Note - make sure to print only the string "even" or the string "odd"
  */
-
+ 
 // change the value of `number` to test your if...else statement
 var number = 1;
 var message;
@@ -40,7 +42,7 @@ if (number%2 === 0) {
 message = "odd";
 }
 console.log(message);
-
+```
 # Quiz: Musical Groups (3-3)
 Musical groups have special names based on the number of people in the group.
 
@@ -61,10 +63,12 @@ If musicians equals 3, then trio should be printed to the console.
 If musicians equals 20, then this is a large group should be printed to the console.
 If musicians equals -1, then not a group should be printed to the console.
 
+Your Code:
+```
 /*
  * Programming Quiz: Musical Groups (3-3)
  */
-
+ 
 // change the value of `musicians` to test your conditional statements
 
 var musicians = 20;
@@ -86,7 +90,7 @@ else if(musicians === 4){
     message ="this is a large group";
 }
 console.log(message);
-
+```
 # Quiz: Murder Mystery (3-4)
 
 Directions:
@@ -123,6 +127,8 @@ TIP: Make sure to test your code with different values. For example,
 
 If room equals gallery and suspect equals Ms. Van Cleve, then Ms. Van Cleve did it in the gallery with the trophy! should be printed to the console.
 
+Your Code:
+```
 /*
  * Programming Quiz: Murder Mystery (3-4)
  */
@@ -148,7 +154,7 @@ if (room === "ballroom") {
 if (solved) {
     console.log(`${suspect} did it in the ${room} with the ${weapon}!`);
 }
-
+```
 # Quiz: Checking your Balance (3-5)
 Using the flowchart below, write the code to represent checking your balance at the ATM. The yellow diamonds represent conditional statements and the blue rectangles with rounded corners represent what should be printed to the console.
 ![atm-check-balance-cropped](https://user-images.githubusercontent.com/25347909/34531827-5730e222-f0bc-11e7-9af8-b6dc13398e5c.jpeg)
@@ -164,6 +170,8 @@ TIP: Make sure to test your code with different values. For example,
 
 If checkBalance equals true and isActive equals false, then Your account is no longer active. should be printed to the console.
 
+Your Code:
+```
 // change the values of balance, checkBalance, and isActive to test your code
 
 var balance = -59.00;
@@ -183,7 +191,7 @@ console.log("Your account is empty.");
 } else if (checkBalance === true && isActive === true && balance < 0) {
 console.log("Your balance is negative. Please contact bank.");
 }
-
+```
 # Quiz: Ice Cream (3-6)
 
 Directions:
@@ -202,6 +210,8 @@ TIP: Make sure to test your code with different values. For example,
 
 If flavor equals "chocolate", vessel equals "cone" and toppings equals "sprinkles", then "I'd like two scoops of chocolate ice cream in a cone with sprinkles." should be printed to the console.
 
+Your Code:
+```
 /*
  * Programming Quiz: Ice Cream (3-6)
  *
@@ -228,7 +238,7 @@ var toppings = "sprinkles";
 if(flavor === "vanilla" ||flavor === "chocolate" && (vessel === "cone" ||vessel === "bowl") && (toppings === "sprinkles" ||toppings === "peanuts")){
     console.log("I'd like two scoops of "+flavor+" ice cream in a "+vessel+" with "+toppings+".");
 }
-
+```
 # Quiz: What do I Wear? (3-7)
 
 If you're like me, finding the right size t-shirt can sometimes be a challenge. What size am I? What's the difference between S (small), M (medium), and L (large)? I usually wear L, but what if I need an XL (extra large)?
