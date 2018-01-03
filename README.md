@@ -428,20 +428,20 @@ Your text editor may try to autocorrect your ellipses ... to the ellipses charac
  *   - The pluralization of the word "bottle" changes from "2 bottles" to "1 bottle" to "0 bottles".
  */
 
-var num = 99;
+```var num = 99;
 var message = "";
 while (num>0) {
     if(num > 2){
         num;
-        var message = num+" bottles of juice on the wall! "+num+" bottles of juice! Take one down, pass it around... "+(num-1)+" bottles of juice on the wall!"
+        var message = num+" bottles of juice on the wall! "+num+" bottles of juice! Take one down, pass it around... "+(num-1)+" bottles of juice on the wall!";
         
     }else if(num===2){
-        var message = num+" bottles of juice on the wall! "+num+" bottles of juice! Take one down, pass it around... "+(num-1)+" bottle of juice on the wall!"
+        var message = num+" bottles of juice on the wall! "+num+" bottles of juice! Take one down, pass it around... "+(num-1)+" bottle of juice on the wall!";
         
     }else{
-        var message = num+" bottle of juice on the wall! "+num+" bottle of juice! Take one down, pass it around... "+(num-1)+" bottles of juice on the wall!"
+        var message = num+" bottle of juice on the wall! "+num+" bottle of juice! Take one down, pass it around... "+(num-1)+" bottles of juice on the wall!";
     }
     num--
     
     console.log(message);
-        }
+        }```
