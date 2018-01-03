@@ -40,7 +40,7 @@ if (number%2 === 0) {
 message = "odd";
 }
 console.log(message);
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 # Quiz: Musical Groups (3-3)
 Musical groups have special names based on the number of people in the group.
 
@@ -66,6 +66,7 @@ If musicians equals -1, then not a group should be printed to the console.
  */
 
 // change the value of `musicians` to test your conditional statements
+
 var musicians = 20;
 var message;
 // your code goes here
@@ -127,6 +128,7 @@ If room equals gallery and suspect equals Ms. Van Cleve, then Ms. Van Cleve did 
  */
 
 // change the value of `room` and `suspect` to test your code
+
 var room = "dining room";
 var suspect = "Mr. Parkes";
 
@@ -163,11 +165,13 @@ TIP: Make sure to test your code with different values. For example,
 If checkBalance equals true and isActive equals false, then Your account is no longer active. should be printed to the console.
 
 // change the values of balance, checkBalance, and isActive to test your code
+
 var balance = -59.00;
 var checkBalance = true;
 var isActive = true;
 
 // your code goes here
+
 if (checkBalance === true && isActive === true && balance > 0) {
 console.log("Your balance is $" + balance + ".");
 } if (checkBalance === false){
@@ -215,10 +219,12 @@ If flavor equals "chocolate", vessel equals "cone" and toppings equals "sprinkle
  */
 
 // change the values of `flavor`, `vessel`, and `toppings` to test your code
+
 var flavor = "strawberry";
 var vessel = "cone";
 var toppings = "sprinkles";
 // Add your code here
+
 if(flavor === "vanilla" ||flavor === "chocolate" && (vessel === "cone" ||vessel === "bowl") && (toppings === "sprinkles" ||toppings === "peanuts")){
     console.log("I'd like two scoops of "+flavor+" ice cream in a "+vessel+" with "+toppings+".");
 }
@@ -261,6 +267,7 @@ If shirtWidth equals 18, shirtLength equals 29 and shirtSleeve equals 8.47, then
    var shirtSleeve = 8.47;
 
    // your code goes here
+   
    if ((shirtWidth >= 18 && shirtWidth < 20) && 
    (shirtLength >= 28 && shirtLength < 29) &&
        (shirtSleeve >= 8.13 && shirtSleeve < 8.38)) {
