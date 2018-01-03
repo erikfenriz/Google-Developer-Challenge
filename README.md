@@ -295,3 +295,111 @@ If shirtWidth equals 18, shirtLength equals 29 and shirtSleeve equals 8.47, then
    } else {
        console.log ("N\/A");
    }
+   
+   # Quiz: Back to School (3-9)
+   
+   In 2015, the U.S. Bureau of Labor Statistics conducted research to reveal how average salary is directly related to the number of years spent in school. In their findings, they found that people with:
+
+no high school diploma earned an average of $25,636/year,
+a high school diploma earned an average of $35,256/year,
+an Associate's degree earned an average of $41,496/year,
+a Bachelor's degree earned an average of $59,124/year,
+a Master's degree earned an average of $69,732/year,
+a Professional degree earned an average of $89,960/year,
+and a Doctoral degree earned an average of $84,396/year.
+NOTE: Wondering what the average salary would be for a person with a Nanodegree from Udacity? That's a hard question to answer, but that doesn't mean we haven't tried to quantify the value of our Nanodegrees. Click here to read more about Nanodegrees from resident Udacity writer Chris Watkins.
+Directions:
+Write a switch statement to set the average salary of a person based on their type of completed education.
+
+Afterwards, print the following to the console.
+
+In 2015, a person with __________ earned an average of __________/year.
+Fill in the blanks with the type of education and the expected average salary. Make sure to use correct grammar in your printed statement. For help, refer to the findings above.
+
+In 2015, a person with a Bachelor's degree earned an average of $59,124/year.
+TIP: To print out the average salary with commas (i.e. 59,124), use the toLocaleString() method and pass it the locale "en-US". For example, salary.toLocaleString("en-US").
+TIP: Make sure to test your code with different values. For example,
+
+If education equals "an Associate's degree", then In 2015, a person with an Associate's degree earned an average of $41,496/year. should be printed to the console.
+
+/*
+ * Programming Quiz: Back to School (3-9)
+ */
+
+// change the value of `education` to test your code
+
+var education = "no high school diploma";
+
+// set the value of this based on a person's education
+
+var salary;
+
+// your code goes here
+
+switch(education){
+case "no high school diploma":
+    salary = "In 2015, a person with no high school diploma earned an average of $25,636/year."
+    break;
+    case "a high school diploma":
+    salary = "In 2015, a person with a high school diploma earned an average of $35,256/year."
+    break;
+    case "an Associate's degree":
+    salary = "In 2015, a person with an Associate's degree earned an average of $41,496/year."
+    break;
+    case "a Bachelor's degree":
+    salary = "In 2015, a person with a Bachelor's degree earned an average of $59,124/year."
+    break;
+    case "a Master's degree":
+    salary = "In 2015, a person with a Master's degree earned an average of $69,732/year."
+    break;
+    case "a Professional degree":
+    salary = "In 2015, a person with a Professional degree earned an average of $89,960/year."
+    break;
+    case "a Doctoral degree":
+    salary = "In 2015, a person with a Doctoral degree earned an average of $84,396/year."
+    break;
+}
+console.log(salary);
+
+# Quiz: JuliaJames (4-1)
+
+"Fizzbuzz" is a famous interview question used in programming interviews. It goes something like this:
+
+Loop through the numbers 1 to 100
+If the number is divisible by 3, print "Fizz"
+If the number is divisible by 5, print "Buzz"
+If the number is divisible by both 3 and 5, print "FizzBuzz"
+If the number is not divisible by 3 or 5, print the number
+TIP: A number x is divisible by a number y if the answer to x / y has a remainder of 0. For example, 10 is divisible by 2 because 10 / 2 = 5 with no remainder. You can check if a number is divisible by another number by checking if x % y === 0.
+We're going to have you program your own version of FizzBuzz called "JuliaJames" (yes, imaginative, right?) Keep in mind that in an interview, you would want to write efficient code with very little duplication. We don't want you to worry about that for this question. Just focus on practicing using loops.
+
+Directions:
+Write a while loop that:
+
+Loop through the numbers 1 to 20
+If the number is divisible by 3, print "Julia"
+If the number is divisible by 5, print "James"
+If the number is divisible by 3 and 5, print "JuliaJames"
+If the number is not divisible by 3 or 5, print the number
+
+/*
+ * Programming Quiz: JuliaJames (4-1)
+ */
+
+var x = 1;
+while (x <= 20) {
+    if(x % 3===0 && x%5===0){
+        console.log("JuliaJames");
+    }
+    else if(x % 3 === 0){
+        console.log("Julia");
+        }else if(x % 5 === 0){
+          console.log("James");  
+        }
+        else{
+            console.log(x)
+        }// check divisibility
+    // print Julia, James, or JuliaJames
+    // increment x
+    x++;
+}
