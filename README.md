@@ -385,7 +385,9 @@ If the number is not divisible by 3 or 5, print the number
 /*
  * Programming Quiz: JuliaJames (4-1)
  */
-
+ 
+Your Code:
+```
 var x = 1;
 while (x <= 20) {
     if(x % 3===0 && x%5===0){
@@ -401,7 +403,7 @@ while (x <= 20) {
         }
     x++;
 }
-
+```
 # Quiz: 99 Bottles of Juice (4-2)
 
 Directions:
@@ -427,8 +429,10 @@ Your text editor may try to autocorrect your ellipses ... to the ellipses charac
  *   - Each line of the lyrics needs to be logged to the same line.
  *   - The pluralization of the word "bottle" changes from "2 bottles" to "1 bottle" to "0 bottles".
  */
-
-```var num = 99;
+ 
+Your Code:
+```
+var num = 99;
 var message = "";
 while (num>0) {
     if(num > 2){
@@ -444,4 +448,5 @@ while (num>0) {
     num--
     
     console.log(message);
-        }```
+        }
+```
