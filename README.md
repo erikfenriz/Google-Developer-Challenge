@@ -919,4 +919,4 @@ donuts.forEach(function summary(donuts){
 });
 ```
 
-The final project I have made is here: https://github.com/erikfenriz/Pixel-Art-Maker
+The final project I have made during the program: https://github.com/erikfenriz/Pixel-Art-Maker
