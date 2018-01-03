@@ -1,7 +1,7 @@
 # Google-Developer-Challenge
 On the way to greatness; year 2017; Udacity and Google announcing over 100k scholarships around the world.
 <br>
-I have accomplished the program and here to share the code is the code, starting with something not super trivial:
+I have accomplished the program and here to share the code, starting with something not super trivial:
 # Quiz: Even or Odd (3-2)
 Directions:
 Write an if...else statement that:
@@ -272,6 +272,8 @@ If shirtWidth equals 19, shirtLength equals 28 and shirtSleeve equals 8.21, then
 If shirtWidth equals 26, shirtLength equals 33 and shirtSleeve equals 9.63, then 2XL should be printed to the console.
 If shirtWidth equals 18, shirtLength equals 29 and shirtSleeve equals 8.47, then N/A should be printed to the console.
 
+Your code
+```
    var shirtWidth = 18;
    var shirtLength = 29;
    var shirtSleeve = 8.47;
@@ -305,7 +307,7 @@ If shirtWidth equals 18, shirtLength equals 29 and shirtSleeve equals 8.47, then
    } else {
        console.log ("N\/A");
    }
-   
+```
    # Quiz: Back to School (3-9)
    
    In 2015, the U.S. Bureau of Labor Statistics conducted research to reveal how average salary is directly related to the number of years spent in school. In their findings, they found that people with:
@@ -332,6 +334,8 @@ TIP: Make sure to test your code with different values. For example,
 
 If education equals "an Associate's degree", then In 2015, a person with an Associate's degree earned an average of $41,496/year. should be printed to the console.
 
+Your code
+```
 /*
  * Programming Quiz: Back to School (3-9)
  */
@@ -370,7 +374,7 @@ case "no high school diploma":
     break;
 }
 console.log(salary);
-
+```
 # Quiz: JuliaJames (4-1)
 
 "Fizzbuzz" is a famous interview question used in programming interviews. It goes something like this:
@@ -392,12 +396,12 @@ If the number is divisible by 5, print "James"
 If the number is divisible by 3 and 5, print "JuliaJames"
 If the number is not divisible by 3 or 5, print the number
 
+Your code
+```
 /*
  * Programming Quiz: JuliaJames (4-1)
  */
  
-Your Code:
-```
 var x = 1;
 while (x <= 20) {
     if(x % 3===0 && x%5===0){
@@ -429,6 +433,8 @@ Some Notes:
 Note the pluralization of the word "bottle" when you go from 2 bottles to 1 bottle.
 Your text editor may try to autocorrect your ellipses ... to the ellipses character … Do not use the ellipses character for this quiz.
 
+Your Code:
+```
 /*
  * Programming Quiz: 99 Bottles of Juice (4-2)
  *
@@ -440,8 +446,7 @@ Your text editor may try to autocorrect your ellipses ... to the ellipses charac
  *   - The pluralization of the word "bottle" changes from "2 bottles" to "1 bottle" to "0 bottles".
  */
  
-Your Code:
-```
+
 var num = 99;
 var message = "";
 while (num>0) {
