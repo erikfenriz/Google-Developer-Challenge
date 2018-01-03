@@ -22,7 +22,7 @@ Make sure to test your code with different values. For example:
 If number equals 1, then odd should be printed to the console.
 If number equals 12, then even should be printed to the console.
 
-Your code
+Your code:
 ```
 /*
  * Programming Quiz: Even or Odd (3-2)
@@ -272,7 +272,7 @@ If shirtWidth equals 19, shirtLength equals 28 and shirtSleeve equals 8.21, then
 If shirtWidth equals 26, shirtLength equals 33 and shirtSleeve equals 9.63, then 2XL should be printed to the console.
 If shirtWidth equals 18, shirtLength equals 29 and shirtSleeve equals 8.47, then N/A should be printed to the console.
 
-Your code
+Your code:
 ```
    var shirtWidth = 18;
    var shirtLength = 29;
@@ -334,7 +334,7 @@ TIP: Make sure to test your code with different values. For example,
 
 If education equals "an Associate's degree", then In 2015, a person with an Associate's degree earned an average of $41,496/year. should be printed to the console.
 
-Your code
+Your code:
 ```
 /*
  * Programming Quiz: Back to School (3-9)
@@ -396,7 +396,7 @@ If the number is divisible by 5, print "James"
 If the number is divisible by 3 and 5, print "JuliaJames"
 If the number is not divisible by 3 or 5, print the number
 
-Your code
+Your code:
 ```
 /*
  * Programming Quiz: JuliaJames (4-1)
