@@ -180,4 +180,111 @@ console.log("Your account is empty.");
 console.log("Your balance is negative. Please contact bank.");
 }
 
+# Quiz: Ice Cream (3-6)
 
+Directions:
+Ice cream is one of the most versatile desserts on the planet because it can be done up so many different ways. Using logical operators, write a series of complex logical expressions that prints only if the following conditions are true:
+
+if flavor is set to vanilla or chocolate and
+if vessel is set to cone or bowl and
+if toppings is set to sprinkles or peanuts
+If the above conditions are true, then print out:
+
+I'd like two scoops of __________ ice cream in a __________ with __________.
+Fill in the blanks with the flavor of the ice cream, vessel, and toppings. For example,
+
+I'd like two scoops of vanilla ice cream in a cone with peanuts.
+TIP: Make sure to test your code with different values. For example,
+
+If flavor equals "chocolate", vessel equals "cone" and toppings equals "sprinkles", then "I'd like two scoops of chocolate ice cream in a cone with sprinkles." should be printed to the console.
+
+/*
+ * Programming Quiz: Ice Cream (3-6)
+ *
+ * Write a single if statement that logs out the message:
+ * 
+ * "I'd like two scoops of __________ ice cream in a __________ with __________."
+ * 
+ * ...only if:
+ *   - flavor is "vanilla" or "chocolate"
+ *   - vessel is "cone" or "bowl"
+ *   - toppings is "sprinkles" or "peanuts"
+ *
+ * We're only testing the if statement and your boolean operators. 
+ * It's okay if the output string doesn't match exactly.
+ */
+
+// change the values of `flavor`, `vessel`, and `toppings` to test your code
+var flavor = "strawberry";
+var vessel = "cone";
+var toppings = "sprinkles";
+// Add your code here
+if(flavor === "vanilla" ||flavor === "chocolate" && (vessel === "cone" ||vessel === "bowl") && (toppings === "sprinkles" ||toppings === "peanuts")){
+    console.log("I'd like two scoops of "+flavor+" ice cream in a "+vessel+" with "+toppings+".");
+}
+
+# Quiz: What do I Wear? (3-7)
+
+If you're like me, finding the right size t-shirt can sometimes be a challenge. What size am I? What's the difference between S (small), M (medium), and L (large)? I usually wear L, but what if I need an XL (extra large)?
+
+Thankfully, our friends at Teespring have got us covered because they've created a sizing chart to make things a lot easier.
+
+![tshirt-guide](https://user-images.githubusercontent.com/25347909/34531980-fcd8dac2-f0bc-11e7-8ed3-84796316c593.png)
+
+Directions:
+Use the sizing chart above, create a series of logical expressions that prints the size of a t-shirt based on the measurements of shirtWidth, shirtLength, and shirtSleeve. Valid sizes include S, M, L, XL, 2XL, and 3XL.
+
+For example, if...
+
+var shirtWidth = 23; // size L (large)
+var shirtLength = 30; // size L (large)
+var shirtSleeve = 8.71; // size L (large)
+Then print L to the console.
+
+Hint: You will need to compare a range of values when checking for shirtWidth, shirtLength, and shirtSleeve. For example, if the shirt's width is at least 20", but no more than 22", then the t-shirt should be medium (M) — as long as the other values for the shirt's length and sleeve measurements match up.
+
+If shirtWidth, shirtLength, and shirtSleeve don't fit within the range of acceptable values for a specific size, then print N/A to the console. For example, if...
+
+var shirtWidth = 18; // size S (small)
+var shirtLength = 29; // size M (medium)
+var shirtSleeve = 8.47; // size M (medium)
+Then print N/A to the console because the measurements don't all match up with one particular size.
+
+TIP: Make sure to test your code with different values. For example,
+
+If shirtWidth equals 19, shirtLength equals 28 and shirtSleeve equals 8.21, then S should be printed to the console.
+If shirtWidth equals 26, shirtLength equals 33 and shirtSleeve equals 9.63, then 2XL should be printed to the console.
+If shirtWidth equals 18, shirtLength equals 29 and shirtSleeve equals 8.47, then N/A should be printed to the console.
+
+   var shirtWidth = 18;
+   var shirtLength = 29;
+   var shirtSleeve = 8.47;
+
+   // your code goes here
+   if ((shirtWidth >= 18 && shirtWidth < 20) && 
+   (shirtLength >= 28 && shirtLength < 29) &&
+       (shirtSleeve >= 8.13 && shirtSleeve < 8.38)) {
+       console.log ("S");
+   } else if ((shirtWidth >= 20 && shirtWidth < 22) &&
+              (shirtLength >= 29 && shirtLength < 30) &&
+              (shirtSleeve >= 8.38 && shirtSleeve < 8.63)) {
+       console.log ("M");
+   } else if ((shirtWidth >= 22 && shirtWidth < 24) &&
+              (shirtLength >= 30 && shirtLength < 31) &&
+              (shirtSleeve >= 8.63 && shirtSleeve < 8.88)) {
+       console.log ("L");
+   } else if ((shirtWidth >= 24 && shirtWidth < 26) &&
+              (shirtLength >= 31 && shirtLength < 33) &&
+              (shirtSleeve >= 8.88 && shirtSleeve < 9.63)) {
+       console.log ("XL");
+   } else if ((shirtWidth >= 26 && shirtWidth < 28) && 
+              (shirtLength >= 33 && shirtLength < 34) && 
+              (shirtSleeve >= 9.63 && shirtSleeve < 10.13)) {
+       console.log ("2XL");
+   } else if (shirtWidth === 28 &&
+              shirtLength === 34 &&
+              shirtSleeve === 10.13) {
+       console.log ("3XL");
+   } else {
+       console.log ("N\/A");
+   }
